@@ -1,0 +1,5 @@
+My program doesn't work completely. For example, if the string "0700 1234" was given to it, it would only evaluate 0700 and discard 1234. I was unable to figure out how to make it evaluate the other arguments without breaking anything. 
+
+My code calls TKcreate which creates a token. From the main, getState is called which gets the current state of the character. It does this by calling the appropiate functions Ts_State0 is the string starts with "0" or Ts_Digit if it starts with "1". I received help for the trimwhitespace function which is called from TKcreate before it gets passed into the getState functions. 
+
+Terms of efficiency, my code is really inefficient but this was done in order to get as much correctness in terms of the output as possible.  

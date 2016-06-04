@@ -1,0 +1,27 @@
+input      	expected output		actual output
+
+0070		octal 0070		octal 0070
+
+1123134		decimal 1123134		Decimal 11213134
+
+0xx123		malformed [0xx123]	malformed input [0xx123]
+
+07713 14849	octal 07713		Octal 07713
+		decimal 14849
+
+3.145613e+10	float 3.145613e+10     float 3.145613e+10
+
+3.145613e-10	float 3.145613e-10	float 3.145613e-10
+
+0.e125		malformed [0.e125]	malformed [0.e125]
+
+1.+2 00314 0xgh malformed [1.+2]	malformed [1.+2]
+		octal 00314
+		malformed [0xgh]
+
+0xabcdef	hex 0xabcdef		hex 0xabcdef
+
+0		Zero 0			Zero Value 0
+
+0+.e165 xfgs	malformed [0+.e165] 	malformed [0+.e165]
+		malformed [xfgs]
